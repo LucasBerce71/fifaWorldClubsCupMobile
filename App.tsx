@@ -1,20 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View } from 'react-native';
+import GameInfo from './src/components/GameInfo';
+import Header from './src/components/Header';
 
 const App: React.FC = () => {
   return (
-    <View style={styles.container}>
-      <Text>Hello World</Text>
+    <View>
+      <Header />
+      <GameInfo />
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default App;
